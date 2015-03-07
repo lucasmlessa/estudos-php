@@ -42,5 +42,4 @@ echo "<br/><br/>";
 /* get_class - retorna a classe que o objeto pertence */
 print_r(get_class($peter));
 echo "<br/>";
-
 ?>
