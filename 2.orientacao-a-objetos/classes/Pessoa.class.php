@@ -34,7 +34,7 @@ class Pessoa
         $this->Altura+= $centimentros;
     }
     
-    /* Método Crescer
+    /* Método Formar
      * altera a Escolaridade para $titulacao */
     function Formar($titulacao) {
         $this->Escolaridade = $titulacao;

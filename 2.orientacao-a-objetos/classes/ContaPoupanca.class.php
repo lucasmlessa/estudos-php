@@ -22,10 +22,16 @@ class ContaPoupanca extends Conta
         } 
         else {
             echo "Retirada não permitida...";
+            return false;
         }
         
         // retirada permitida
         return true;
+    }
+    function Transferir($Conta, $valor) {
+        if ($this->Retirar($valor_)) {
+            $Conta->Depositar($valor);
+        }
     }
 }
 ?>

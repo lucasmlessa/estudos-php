@@ -2,6 +2,7 @@
 class ContaCorrente extends Conta
 {
     var $Limite;
+    var $TaxaTransferencia;
     
     /* Método Construtor (sobrescrito)
      * agora também inicializa a variável $Limite */
@@ -33,6 +34,14 @@ class ContaCorrente extends Conta
         
         // retirada permitida
         return true;
+    }
+    final function Transferir($Conta, $Valor) {
+        if ($this->Retirar($Valor)) {
+            $Conta->Depositar($Valor);
+        }
+        if ($this->Titular != $Conta->Titular) {
+            $this->Retirar($this->TaxaTransferencia);
+        }
     }
 }
 ?>

@@ -2,7 +2,7 @@
 
 /*  carrega as classes  */
 include_once 'classes/Pessoa.class.php';
-include_once 'classes/Conta.class.php';
+include_once 'classes/ContaOld.class.php';
 
 // criação do objeto $wade
 $wade = new Pessoa(10, 'Wade Wilsom', 1.85, 25, '10/04/1976', 'Ensino Superior', 700.00);

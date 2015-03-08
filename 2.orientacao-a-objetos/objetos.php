@@ -2,7 +2,7 @@
 
 // carrega as classes
 include_once 'classes/Pessoa.class.php';
-include_once 'classes/Conta.class.php';
+include_once 'classes/ContaOld.class.php';
 
 // criação do objeto $peter
 $peter = new Pessoa;
